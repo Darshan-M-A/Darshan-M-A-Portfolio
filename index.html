@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan M Allurkar - Space Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="stars-background">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <div class="terminal-text">
+                <span id="loading-text">INITIALIZING SPACE SYSTEM...</span>
+                <span class="cursor">|</span>
+            </div>
+            <button id="skip-button" class="skip-button">SKIP INTRO</button>
+            <button id="enter-button" class="enter-button hidden">ENTER PORTFOLIO</button>
+        </div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Main Portfolio -->
+    <div id="main-portfolio" class="main-portfolio hidden">
+        <!-- Space Background -->
+        <div class="space-background">
+            <div class="stars"></div>
+            <div class="nebula"></div>
+            <div class="floating-particles">
+                <div class="cosmic-particle"></div>
+                <div class="cosmic-particle"></div>
+                <div class="cosmic-particle"></div>
+                <div class="cosmic-particle"></div>
+                <div class="cosmic-particle"></div>
+                <div class="cosmic-particle"></div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">Darshan</span>
+                    <span class="logo-accent">.space</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Journey</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div id="easter-egg-hint" style="background: #222; color: #f99b05; padding: 10px; text-align: center; font-family: 'Orbitron', monospace;">
+                Hint: Type space-themed words like 'rocket', 'star', or 'alien' in the search or chat to discover hidden messages! 🚀✨
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text floating">
+                    <h1 class="hero-title">
+                        <span class="glitch-text">Darshan M Allurkar</span>
+                    </h1>
+                    <p class="hero-subtitle">B.Tech Computer Science Student</p>
+                    <p class="hero-description">
+                        I craft beautiful, interactive web experiences with modern technologies.
+                        Exploring the digital cosmos of backend development, AI, and emerging technologies
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary cosmic-glow">View Projects</a>
+                        <a href="#contact" class="btn btn-outline cosmic-border">Contact Me</a>
+                        <a href="assets/Darshan-M-A-CV.pdf" download class="btn btn-primary cosmic-glow" id="download-cv-btn" role="button">Download CV</a>
+                    </div>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-halo"></div>
+
+                    <div class="orbit-ring ring-1"></div>
+                    <div class="orbit-ring ring-2"></div>
+                    <div class="orbit-ring ring-3"></div>
+
+                    <div class="profile-image">
+                        <img src="images/myphoto.jpg" alt="Profile Photo" class="profile-photo" />
+                    </div>
+
+                    <div class="space-particle sp-1"></div>
+                    <div class="space-particle sp-2"></div>
+                    <div class="space-particle sp-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title cosmic-glow">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text floating">
+                        <p>I'm a final-year B.Tech Computer Science and Engineering student at Sharnbasva University. I have experience in Python, Java, C, HTML, CSS, and basic DevOps, and I'm currently learning Go (Golang) to strengthen my backend development skills.</p>
+                        <p>I have worked on multiple academic and personal projects, completed some internships, and participated in a college hackathons, which helped me gain hands-on problem-solving and teamwork experience.</p>
+                        <p>My areas of interest include backend development, data science, web development, and emerging technologies like AI, blockchain, embedded systems, and IoT.</p>
+                        <div class="about-stats">
+                            <div class="stat-item cosmic-card">
+                                <h3>2026</h3>
+                                <p>Graduation Year</p>
+                            </div>
+                            <div class="stat-item cosmic-card">
+                                <h3>10+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item cosmic-card">
+                                <h3>2+</h3>
+                                <p>Internships completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience/Journey Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title cosmic-glow">My Journey</h2>
+                <div class="journey-description">
+                    <p>Explore my path through the cosmos of technology and learning</p>
+                </div>
+                
+                <div class="timeline-journey">
+                    <div class="journey-path"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item journey-item left" data-year="2022">
+                        <div class="journey-node">
+                            <div class="node-glow"></div>
+                            <div class="node-core">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content journey-card cosmic-card">
+                            <div class="journey-year">2022</div>
+                            <h3>Started B.Tech Journey</h3>
+                            <h4>Computer Science and Engineering</h4>
+                            <span class="company">Sharnbasva University, Kalaburagi</span>
+                            <p>Began my undergraduate studies in Computer Science and Engineering, focusing on programming fundamentals, data structures, and software development principles.</p>
+                            <div class="journey-type education">Education</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item journey-item right" data-year="2022">
+                        <div class="journey-node">
+                            <div class="node-glow"></div>
+                            <div class="node-core">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content journey-card cosmic-card">
+                            <div class="journey-year">----</div>
+                            <h3>----</h3>
+                            <h4></h4>
+                            <span class="company"></span>
+                            <span class="date"></span>
+                            <p></p>
+                            <div class="journey-type internship">Internship</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item journey-item left" data-year="2023">
+                        <div class="journey-node">
+                            <div class="node-glow"></div>
+                            <div class="node-core">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content journey-card cosmic-card">
+                            <div class="journey-year">----</div>
+                            <h3>----</h3>
+                            <h4></h4>
+                            <span class="company"></span>
+                            <p></p>
+                            <div class="journey-type achievement">Achievement</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item journey-item right" data-year="2024">
+                        <div class="journey-node">
+                            <div class="node-glow"></div>
+                            <div class="node-core">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content journey-card cosmic-card">
+                            <div class="journey-year">----</div>
+                            <h3>----</h3>
+                            <h4></h4>
+                            <span class="company"></span>
+                            <p></p>
+                            <div class="journey-type projects">Projects</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item journey-item left" data-year="2026">
+                        <div class="journey-node">
+                            <div class="node-glow"></div>
+                            <div class="node-core">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content journey-card cosmic-card">
+                            <div class="journey-year">----</div>
+                            <h3>---</h3>
+                            <h4></h4>
+                            <span class="company"></span>
+                            <p></p>
+                            <div class="journey-type education">Future Goal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title cosmic-glow">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Golang</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fab fa-figma"></i>
+                        <h3>Figma</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud</h3>
+                    </div>
+                    <div class="skill-item floating cosmic-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>DevOps</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title cosmic-glow">Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/entertainmenthub.jpg" alt="entertainmenthub Project Screenshot" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Entertainment Hub</h3>
+                            <p>
+                               Entertainment-Hub is an interactive hub for movies and concerts—browse, book, and enjoy your favorite shows with a seamless seat selection and ticketing experience
+                            </p>
+                            <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                            <a href="https://entertainmenthub-three.vercel.app/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Darshan-M-A/EntertainmentHub" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/NoteVault.jpg" alt="NoteVault Project Screenshot" />
+                        </div>
+                        <div class="project-content">
+                            <h3>NoteVault</h3>
+                            <p>
+                                Note Vault is a secure note-taking app with OTP and Google sign-in. Once logged in, users can seamlessly create, save, and remove notes—stored safely in local storage.
+                            </p>
+                            <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Local Storage</span>
+                            </div>
+                            <div class="project-links">
+                            <a href="https://notevault-six.vercel.app/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Darshan-M-A/Notevault" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/doc-udi.jpg" alt="Doc-UDI Project Screenshot" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Doc-UDI</h3>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                            </p>
+                            <div class="project-tags">
+                            <span class="tag">React.JS</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            </div>
+                            <div class="project-links">
+                            <a href="https://your-live-demo-link.com" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/your-github-repo" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title cosmic-glow">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info floating">
+                        <div class="contact-item cosmic-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>darshanallurkar615@gmail.com</p>
+                        </div>
+                        <div class="contact-item cosmic-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>+91 9353157384</p>
+                        </div>
+                        <div class="contact-item cosmic-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Kalaburagi, Karnataka</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Darshan-M-A" target="_blank" class="social-link cosmic-glow">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/darshan-m-allurkar-a8193a27a/" target="_blank" class="social-link cosmic-glow">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/darshan_m_714" target="_blank" class="social-link cosmic-glow">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form floating cosmic-card" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary cosmic-glow">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot -->
+        <div class="chatbot-container" id="chatbot-container">
+            <div class="chatbot-header" id="chatbot-header">
+                <span>Space Assistant</span>
+                <button id="chatbot-toggle" class="chatbot-toggle">
+                    <i class="fas fa-robot"></i>
+                </button>
+            </div>
+            <div class="chatbot-body" id="chatbot-body">
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <div class="message bot-message">
+                        <span>Hello! I'm your space assistant. Ask me about Darshan's skills, projects, or contact info!</span>
+                    </div>
+                </div>
+                <div class="chatbot-input-container">
+                    <input type="text" id="chatbot-input" placeholder="Ask me anything..." maxlength="200">
+                    <button id="chatbot-send" class="chatbot-send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top cosmic-glow" id="back-to-top">
+            <i class="fas fa-rocket"></i>
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
